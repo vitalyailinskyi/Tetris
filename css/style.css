@@ -31,7 +31,7 @@
     background-color: coral;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 50px;
+    margin-left: 60px;
 }
 
 .mini-grid div {
