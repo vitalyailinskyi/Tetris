@@ -7,6 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
   let nextRandom = 0
   let timerId
 
+  // mobile-buttons
+  const leftBtnMobile = document.querySelector('#button_left')
+  const downBtnMobile = document.querySelector('#button_down')
+  const rotateBtnMobile = document.querySelector('#button_rotate')
+  const rightBtnMobile = document.querySelector('#button_right')
+
+
+
   const lTetromino = [
     [1, width + 1, width * 2 + 1, 2],
     [width, width + 1, width + 2, width * 2 + 2],
@@ -94,6 +102,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   document.addEventListener('keyup', contol)
+
+
+  leftBtnMobile.addEventListener('click', () => {moveLeft();})
+  downBtnMobile.addEventListener('click', () => {moveDown();})
+  rotateBtnMobile.addEventListener('click', () => {rotate();})
+  rightBtnMobile.addEventListener('click', () => {moveRight();})
 
   //move down function
   function moveDown() {

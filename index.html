@@ -5,243 +5,253 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic tetris</title>
     <script src="./js/app.js" charset="UTF-8"></script>
+    <link rel="stylesheet" href="./css/reset.css"></link>
     <link rel="stylesheet" href="./css/style.css"></link>
 </head>
 <body>
-    <h3>Score: <span id="score">0</span></h3>
-    <button id="start-button">Start/Pause</button>
-    
-    <div class="container">
-        <div class="grid">
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="taken"></div>
-            <div class="taken"></div>
-            <div class="taken"></div>
-            <div class="taken"></div>
-            <div class="taken"></div>
-            <div class="taken"></div>
-            <div class="taken"></div>
-            <div class="taken"></div>
-            <div class="taken"></div>
-            <div class="taken"></div>
+    <div class="global-container">
+        <h3>Score: <span id="score">0</span></h3>
+        <button id="start-button">Start/Pause</button>
+        
+        <div class="container">
+            <div class="wrapper">
+                <div class="grid">
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                    <div class="taken"></div>
+                    <div class="taken"></div>
+                    <div class="taken"></div>
+                    <div class="taken"></div>
+                    <div class="taken"></div>
+                    <div class="taken"></div>
+                    <div class="taken"></div>
+                    <div class="taken"></div>
+                    <div class="taken"></div>
+                    <div class="taken"></div>
+                </div>
+            </div>
+            <div class="mini-grid">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
-
-        <div class="mini-grid">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="container mobile-buttons">
+            <button class="mobile-button" id="button_left">←</button>
+            <button class="mobile-button" id="button_down">↓</button>
+            <button class="mobile-button" id="button_rotate">&#x21BB;</button>
+            <button class="mobile-button" id="button_right">→</button>
         </div>
     </div>
 </body>
